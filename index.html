@@ -8,7 +8,7 @@
   <title>UberEats-demo-frontend</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
 </head>
 
 <body>
@@ -16,11 +16,11 @@
   <header>
     <div class="top-menu">
       <div class="logo">
-        <img src="./images/logo.svg" alt="ubereats">
+        <img src="./images/logo.svg" class="logo__image" alt="ubereats">
       </div>
 
       <div class="shipping">
-        <div class="delivery-time text">ASAP</div> to
+        <div class="delivery-time text">ASAP</div>
         <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
       </div>
 
@@ -32,80 +32,84 @@
     </div>
   </header>
 
-  <div class="search-line">
-    <input type="text" placeholder="Search for restaurant or cuisine" class="search">
-  </div>
-
   <main>
+    <div class="search-line">
+      <input type="text" placeholder="Search for restaurant or cuisine" class="search">
+    </div>
+
+    <div class="shipping_mobile">
+      <div class="delivery-time text">ASAP</div>
+      <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
+    </div>
+
     <h1 class="title-page">Moscow Restaurants</h1>
 
     <section class="content">
 
       <div class="card-restaurant">
-        <img src="./images/mac.jpg" alt="Макдоналдс — Газетный" title="Макдоналдс — Газетный">
+        <img src="./images/mac.jpg" class="restaurant-image" alt="Макдоналдс — Газетный" title="Макдоналдс — Газетный">
         <div class="title-restaurant">Макдоналдс — Газетный</div>
         <div class="description-restaurant">₽₽ • Бургеры</div>
         <div class="cooking-time">25 - 35 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/dimsum.jpg" alt="DimSum & Co — ЦДМ" title="DimSum & Co — ЦДМ">
+        <img src="./images/dimsum.jpg" class="restaurant-image" alt="DimSum & Co — ЦДМ" title="DimSum & Co — ЦДМ">
         <div class="title-restaurant">DimSum & Co — ЦДМ</div>
         <div class="description-restaurant">₽ • Японская • Китайская • Азиатская</div>
         <div class="cooking-time">40 - 50 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/dvigok.jpg" alt="ДвижОК — Манежная" title="ДвижОК — Манежная">
+        <img src="./images/dvigok.jpg" class="restaurant-image" alt="ДвижОК — Манежная" title="ДвижОК — Манежная">
         <div class="title-restaurant">ДвижОК — Манежная</div>
         <div class="description-restaurant">₽ • Американская • Европейская</div>
         <div class="cooking-time">35 - 45 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/nja.jpg" alt="НЯ — NHA" title="НЯ — NHA">
+        <img src="./images/nja.jpg" class="restaurant-image" alt="НЯ — NHA" title="НЯ — NHA">
         <div class="title-restaurant">НЯ — NHA</div>
         <div class="description-restaurant">₽₽ • Вьетнамская</div>
         <div class="cooking-time">30 - 40 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/tochkadzi.jpg" alt="Точка Дзы — Цветной" title="Точка Дзы — Цветной">
+        <img src="./images/tochkadzi.jpg" class="restaurant-image" alt="Точка Дзы — Цветной" title="Точка Дзы — Цветной">
         <div class="title-restaurant">Точка Дзы — Цветной</div>
         <div class="description-restaurant">₽₽ • Вьетнамская</div>
         <div class="cooking-time">40 - 50 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/cinnabon.jpg" alt="Cinnabon" title="Cinnabon">
+        <img src="./images/cinnabon.jpg" class="restaurant-image" alt="Cinnabon" title="Cinnabon">
         <div class="title-restaurant">Cinnabon</div>
         <div class="description-restaurant">₽ • Выпечка • Десерты • Капкейки</div>
         <div class="cooking-time">25 - 35 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/pizzelove.jpg" alt="PIZZELOVE" title="PIZZELOVE">
+        <img src="./images/pizzelove.jpg" class="restaurant-image" alt="PIZZELOVE" title="PIZZELOVE">
         <div class="title-restaurant">PIZZELOVE</div>
         <div class="description-restaurant">₽₽ • Пицца</div>
         <div class="cooking-time">15 - 25 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/zucafe.jpg" alt="Zю кафе — Тверская" title="Zю кафе — Тверская">
+        <img src="./images/zucafe.jpg" class="restaurant-image" alt="Zю кафе — Тверская" title="Zю кафе — Тверская">
         <div class="title-restaurant">Zю кафе — Тверская</div>
         <div class="description-restaurant">₽₽ • Японская</div>
         <div class="cooking-time">25 - 35 Min</div>
       </div>
 
       <div class="card-restaurant">
-        <img src="./images/barbqcafe.jpg" alt="Bar BQ Cafe — Манежная" title="Bar BQ Cafe — Манежная">
-        <div class="title-restaurant"></div>
+        <img src="./images/barbqcafe.jpg" class="restaurant-image" alt="Bar BQ Cafe — Манежная" title="Bar BQ Cafe — Манежная">
+        <div class="title-restaurant">Bar BQ Cafe — Манежная</div>
         <div class="description-restaurant">₽₽₽ • Европейская</div>
         <div class="cooking-time">30 - 40 Min</div>
       </div>
     </section>
   </main>
-
   <footer>
     <div class="footer-body">
       <div class="footer-logo">
@@ -181,7 +185,7 @@
         <div class="footer__bottom-line-link">
           <a href="#" class="footer__link footer__link_small">Terms</a>
         </div>
-        <div class="button-up"></div>
+        <!-- <div class="button-up"></div>-->
       </div>
 
   </footer>

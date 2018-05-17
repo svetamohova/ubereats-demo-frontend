@@ -218,7 +218,11 @@ footer {
 .language-change {
   width: 225px;
   outline: none;
-  background: url(../images/word.svg) no-repeat 16px center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/world.svg) no-repeat 16px center,
+    url(../images/arrow-white.svg) no-repeat 200px center;
   background-color: #3b3b3b;
   border: 1px solid #3b3b3b;
   border-radius: 2px;
@@ -231,6 +235,7 @@ footer {
   padding: 12px 48px;
   margin-bottom: 20px;
 }
+
 .hashtag {
   font-style: normal;
   font-weight: normal;

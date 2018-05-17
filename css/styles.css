@@ -120,23 +120,20 @@ header {
   cursor: pointer;
   background: #000;
 }
-.search-line {
+.search {
   width: 100%;
   margin: 0 auto;
 }
-.search {
+.search__input {
   width: 100%;
   padding: 15px 30px;
   box-sizing: border-box;
   border: none;
-  border-bottom: 1px solid #757575;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
   outline: none;
-
   line-height: 24px;
   font-size: 16px;
-  color: #626262;
-  mix-blend-mode: normal;
-  opacity: 0.5;
+  color: rgba(98, 98, 98, 0.5);
   background: url("../images/search.svg") no-repeat 0 center;
 }
 main {

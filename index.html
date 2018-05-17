@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UberEats-demo-frontend</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
 </head>
@@ -19,9 +19,11 @@
         <img src="./images/logo.svg" class="logo__image" alt="ubereats">
       </div>
 
-      <div class="shipping">
-        <div class="delivery-time text">ASAP</div>
-        <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
+      <div class="delivery">
+        <div class="delivery-when text">ASAP</div>
+        <form action="" method="POST" name="delivery-where" class="delivery-where">
+          <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
+        </form>
       </div>
 
       <div class="user">
@@ -39,9 +41,11 @@
       </form>
     </div>
 
-    <div class="shipping_mobile">
-      <div class="delivery-time text">ASAP</div>
-      <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
+    <div class="delivery_mobile">
+      <div class="delivery-when text">ASAP</div>
+      <form action="" method="POST" name="delivery-where" class="delivery-where">
+        <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
+      </form>
     </div>
 
     <h1 class="title-page">Moscow Restaurants</h1>

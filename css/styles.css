@@ -67,8 +67,9 @@ header {
   color: #626262;
 }
 .delivery-address {
+  width: 292px;
   border: 1px solid #e0e0e0;
-  padding: 8px 36px;
+  padding: 8px 0 8px 36px;
   box-sizing: border-box;
   border-radius: 2px;
   margin-left: 19px;
@@ -91,39 +92,31 @@ header {
   cursor: pointer;
 }
 
-.autoriz {
+.header__button {
+  padding: 8px 24px;
+  border-radius: 2px;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.header__button_autoriz {
   border: 1px solid #e0e0e0;
-  padding: 8px 24px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  margin-right: 8px;
-  margin-left: 8px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  font-size: 13px;
-  text-align: center;
-  color: #1d1d1d;
-  cursor: pointer;
   background: #fff;
+  color: #1d1d1d;
 }
-.register {
+.header__button_register {
   border: none;
-  padding: 8px 24px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  margin-right: 8px;
-  margin-left: 8px;
-
+  background: #000;
+  color: #fff;
+}
+.header__button_text {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   font-size: 13px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  background: #000;
 }
+
 .search {
   width: 100%;
   margin: 0 auto;
@@ -186,8 +179,6 @@ main {
   color: #1d1d1d;
 }
 
-.search-placeholder {
-}
 footer {
   display: block;
   background: #262626;
@@ -317,45 +308,47 @@ footer {
   bottom: 24px;
   right: 24px;
 }
+/* =============== При ширине экрана 320px ================ */
 @media (max-width: 320px) {
   .logo__image {
     width: 103px;
   }
-  .shipping,
+  .delivery,
   .basket {
     display: none;
   }
-  .autoriz,
-  .register {
+
+  .header__button {
     padding: 0 17px;
-    font-size: 11px;
-    line-height: 40px;
   }
-  .autoriz {
+  .header__button_autoriz {
     margin-right: 6px;
   }
-  .register {
+  .header__button_register {
     margin-right: 0;
   }
-  .search-line {
+  .header__button_text {
+    line-height: 40px;
+    font-size: 11px;
+  }
+
+  .search {
     width: 100%;
     padding: 20px 0 0 0;
     box-sizing: border-box;
   }
-  .search {
+  .search__input {
     font-size: 13px;
     background-size: 16px 16px;
   }
-  .shipping_mobile {
+  .delivery_mobile {
     display: flex;
   }
   .restaurant-image {
     width: 100%;
     height: 220px !important;
   }
-  .footer-body {
-    width: 100%;
-  }
+
   .top-menu {
     width: 100%;
     box-sizing: border-box;
@@ -373,7 +366,7 @@ footer {
     font-size: 13px;
     color: #1d1d1d;
   }
-  .shipping_mobile {
+  .delivery_mobile {
     position: relative;
     font-size: 11px;
     margin-top: 40px;
@@ -381,7 +374,7 @@ footer {
   .delivery-address {
     margin-left: 8px;
   }
-  .delivery-time:before {
+  .delivery-when:before {
     display: block;
     content: "When";
     font-size: 11px;
@@ -390,7 +383,7 @@ footer {
     top: -25px;
     left: 7px;
   }
-  .delivery-time:after {
+  .delivery-when:after {
     content: "To";
     display: block;
     position: absolute;
@@ -404,7 +397,9 @@ footer {
     font-size: 11px;
     color: #626262;
   }
+
   .footer-body {
+    width: 100%;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -440,6 +435,8 @@ footer {
   }
 }
 /* sm — от 576 до 768 (большие смартфоны и планшеты в вертикальной ориентации), */
+
+/* =============== При ширине экрана 768px ================ */
 @media (max-width: 768px) {
   .top-menu {
     width: 100%;
@@ -487,10 +484,13 @@ footer {
   .text {
     font-size: 13px;
   }
-  .delivery-time {
+  .delivery-address {
+    width: 210px;
+  }
+  .delivery-when {
     align-items: center;
   }
-  .delivery-time:after {
+  .delivery-when:after {
     font-weight: normal;
     font-size: 13px;
     margin: 0;

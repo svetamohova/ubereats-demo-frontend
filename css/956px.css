@@ -1,0 +1,301 @@
+/* ================= */
+@media (min-width: 956px) {
+  main {
+    width: 956px;
+    margin: 0 auto;
+  }
+  .logo__image {
+    width: 100%;
+  }
+  .top-menu {
+    width: 956px;
+    margin: 0 auto;
+  }
+  /* Delivery */
+  .delivery {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+  .delivery-when {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-right: 9px;
+  }
+  .delivery-when:before {
+    display: none;
+    content: "When";
+    font-size: 11px;
+    color: #626262;
+    position: absolute;
+    top: -15px;
+  }
+  .delivery-when:after {
+    content: "to";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 68px;
+    margin: 0 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 16px;
+    color: #626262;
+  }
+  .delivery-address {
+    width: 292px;
+    border: 1px solid #e0e0e0;
+    padding: 8px 0 8px 36px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-left: 19px;
+    background: url("../images/location.svg") no-repeat 12px center;
+  }
+  .delivery_mobile {
+    display: none;
+  }
+  /* #Delivery */
+
+  .title-page {
+    font-family: "Roboto", sans-serif;
+    line-height: 34px;
+    font-weight: normal;
+    font-size: 22px;
+    color: #1d1d1d;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  .basket {
+    display: block;
+    width: 19px;
+    height: 22px;
+    margin-left: 20px;
+    background: url("../images/basket.svg") no-repeat center;
+    cursor: pointer;
+  }
+
+  .header__button {
+    padding: 8px 24px;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-left: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .header__button_autoriz {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    color: #1d1d1d;
+  }
+  .header__button_register {
+    border: none;
+    background: #000;
+    color: #fff;
+  }
+  .header__button_text {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 13px;
+  }
+
+  .search {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .search__input {
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    outline: none;
+    line-height: 24px;
+    font-size: 16px;
+    color: rgba(98, 98, 98, 0.5);
+    background: url("../images/search.svg") no-repeat 0 center;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-left: -8px;
+  margin-right: -8px;*/
+    margin-bottom: 32px;
+  }
+  .text {
+    line-height: 24px;
+    font-size: 16px;
+    color: #1d1d1d;
+  }
+  .text1 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .card-restaurant {
+    /*margin: 0 4px 36px 4px;*/
+    margin-bottom: 36px;
+  }
+  .restaurant-image {
+    height: 217px;
+  }
+  /* как у asap */
+  .title-restaurant {
+    padding-top: 5px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #1d1d1d;
+  }
+  .card-restaurant__cooking-info {
+    line-height: 21px;
+    font-size: 14px;
+    color: #626262;
+  }
+  .cooking-time {
+    line-height: 21px;
+    font-size: 13px;
+    color: #1d1d1d;
+  }
+
+  footer {
+    display: block;
+    background: #262626;
+    margin-top: 64px;
+  }
+  .footer-body {
+    width: 956px;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+  .footer-logo {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 40px;
+  }
+  .footer-menu {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+  }
+  .footer-menu__l-block {
+    margin-right: 20px;
+  }
+  .language-change {
+    width: 225px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/world.svg) no-repeat 16px center,
+      url(../images/arrow-white.svg) no-repeat 200px center;
+    background-color: #3b3b3b;
+    border: 1px solid #3b3b3b;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 48px;
+    margin-bottom: 20px;
+  }
+
+  .hashtag {
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .hash {
+    color: #49a144;
+  }
+  .footer__app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+  }
+  .app-store,
+  .google-play {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .footer__bottom-line {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 11px;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+  .footer-menu__wrap {
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 13px;
+    display: flex;
+  }
+  .footer-menu__list {
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    margin-right: 76px;
+    margin-left: 76px;
+  }
+  .footer-menu__item {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .footer__link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .footer__link_small {
+    font-size: 11px;
+  }
+  .copyright {
+    margin-right: 174px;
+  }
+  .footer__bottom-line-link {
+    position: relative;
+    margin-right: 200px;
+  }
+  .button-up {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background: url("../images/arrow.svg") no-repeat center center;
+    background-color: #59bd5a;
+    border-radius: 2px;
+    cursor: pointer;
+    bottom: 24px;
+    right: 24px;
+  }
+}

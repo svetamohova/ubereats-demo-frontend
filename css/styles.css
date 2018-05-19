@@ -141,8 +141,9 @@ main {
 .content {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px;
-  margin-right: -8px;
+  justify-content: space-between;
+  /* margin-left: -8px;
+  margin-right: -8px;*/
   margin-bottom: 32px;
 }
 .text {
@@ -156,7 +157,8 @@ main {
   line-height: normal;
 }
 .card-restaurant {
-  margin: 0 4px 36px 4px;
+  /*margin: 0 4px 36px 4px;*/
+  margin-bottom: 36px;
 }
 .restaurant-image {
   height: 217px;
@@ -168,7 +170,7 @@ main {
   font-size: 16px;
   color: #1d1d1d;
 }
-.description-restaurant {
+.card-restaurant__cooking-info {
   line-height: 21px;
   font-size: 14px;
   color: #626262;
@@ -448,18 +450,18 @@ footer {
     padding: 0 8px;
   }
   .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-left: -8px;
+    margin-right: -8px;
   }
   .card-restaurant {
-    margin-bottom: 36px;
+    margin: 0 8px 36px 8px;
   }
+  /*
   .card-restaurant:last-child {
     flex-grow: 1;
-  }
+  }*/
   .restaurant-image {
-    height: 254px;
+    height: 249px;
   }
   .footer-body {
     width: 100%;

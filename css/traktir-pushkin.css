@@ -1,0 +1,132 @@
+/* ======================= */
+nav {
+  padding: 30px 0;
+  width: 956px;
+  margin: 0 auto;
+}
+.nav-wrapper {
+  width: 100%;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+.restaurant {
+  height: 364px;
+  background: url("../images/restaurant-menu/lg-background.jpg") no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+}
+.restaurant__header {
+  width: 956px;
+  margin: 0 auto;
+}
+.restaurant__desc {
+  display: flex;
+  flex-direction: column;
+  padding: 38px;
+  background: #fff;
+  padding: 10px 40px 50px 40px;
+}
+.restaurant__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+  color: #1d1d1d;
+  letter-spacing: -0.9px;
+  margin: 40px 0 40px 0;
+}
+.restaurant__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subtitle-page {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 34px;
+  font-size: 22px;
+  color: #1d1d1d;
+}
+
+.cooking-time_color {
+  background: #262626;
+  border-radius: 16px;
+  color: #fff;
+  padding: 8px 16px;
+}
+.menu {
+  list-style-type: none;
+}
+.menu__item {
+  display: inline-block;
+  margin: 0 20px;
+}
+.menu__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #626262;
+  text-decoration: none;
+}
+.menu__link.active {
+  color: #327430;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.menu-list__food {
+  display: flex;
+  justify-content: space-between;
+  width: 48.3%;
+  margin: 0 8px 36px 8px;
+}
+.food-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #1d1d1d;
+}
+.food-small-desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 13px;
+  color: #626262;
+}
+.food__price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 15px;
+  color: #1d1d1d;
+}
+.food__desc,
+.food__img {
+  display: flex;
+  flex-direction: column;
+}
+.food__desc {
+  border: 1px solid rgba(117, 117, 117, 0.4);
+  padding: 16px 0 16px 16px;
+  border-right: none;
+  width: 60%;
+}

@@ -7,66 +7,74 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UberEats-demo-frontend</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/styles1.css">
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
-  <link rel="stylesheet" href="./css/flexboxgrid2.css">
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.1.0/flexboxgrid2.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/traktir-pushkin.css">
 </head>
 
 <body>
 
+  <a name="top"></a>
   <header>
     <div class="top-menu">
       <div class="logo">
         <img src="./images/logo.svg" class="logo__image" alt="ubereats">
       </div>
 
-      <div class="shipping">
-        <div class="delivery-time text">ASAP</div>
-        <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
+      <div class="delivery">
+        <div class="delivery-when">ASAP</div>
+        <form action="" method="POST" name="delivery-where" class="delivery-where">
+          <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address">
+        </form>
       </div>
-      <!--   <div class="shipping_mobile">
-        <div class="delivery-time text">ASAP</div>
-        <input type="text" value="ul. Bolshaya Dmitrovka,22" class="delivery-address text">
-      </div>-->
+
       <div class="user">
-        <button class="autoriz">Sign In</button>
-        <button class="register">Register</button>
+        <button class="header__button header__button_autoriz header__button_text">Sign In</button>
+        <button class="header__button header__button_register header__button_text">Register</button>
         <div class="basket"></div>
-      </div>
-    </div>
-    <div class="b1">
-      <div class="">
-        <h1 class="restaurant__title">Трактир «Пушкин»</h1>
-        <span class="description-restaurant">₽₽₽ • Европейская</span>
-        <span class="cooking-time cooking-time_color">40 - 50 Min</span>
       </div>
     </div>
   </header>
 
-  <nav>
-    <ul class="menu">
-      <li class="menu__item">
-        <a href="#" class="menu__link active">Закуски</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Салаты</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Супы</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Горячие блюда</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Гарниры</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Десерты</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="restaurant">
+    <div class="restaurant__header">
+      <div class="col-xs-12 col-sm-5 col-md-5 col-xl-5 col-lg-5">
+        <div class="restaurant__desc">
+          <h1 class="restaurant__title">Трактир «Пушкин»</h1>
+          <div class="restaurant__info-wrapper">
+            <span class="card-restaurant__cooking-info">₽₽₽ • Европейская</span>
+            <span class="cooking-time cooking-time_color">40 - 50 Min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <section class="nav-wrapper">
+    <nav>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="menu__link active">Закуски</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Салаты</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Супы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Горячие блюда</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Гарниры</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Десерты</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
   <main>
     <section class="content">
       <h2 class="subtitle-page">Закуски</h2>
@@ -140,6 +148,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer-body">
       <div class="footer-logo">
@@ -215,7 +224,7 @@
         <div class="footer__bottom-line-link">
           <a href="#" class="footer__link footer__link_small">Terms</a>
         </div>
-        <!-- <div class="button-up"></div>-->
+        <a href="#top" class="button-up"></a>
       </div>
 
   </footer>
